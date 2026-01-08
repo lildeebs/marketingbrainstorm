@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: '/marketingbrainstorm',
+  basePath: '/GodGPT-Marketing',
   images: {
     unoptimized: true,
   },
