@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'The Hidden Pattern ChatGPT Missed About Your 2026 | Free Life Reading',
-  description: 'Upload your 2025 wrap and discover your personalized 2026 monthly themes. Get step-by-step guidance ChatGPT can\'t give you. Free preview reading - no credit card required.',
+  title: 'Your 2025 Wrapped, Your 2026 Revealed | Free Life Reading | GodGPT',
+  description: 'Upload your 2025 wrap and discover your personalized 2026 monthly themes. Get deep insights and step-by-step guidance you probably can\'t get with any other app. Free preview reading - no credit card required.',
 };
 
 export default function GodGPTInfoPage() {
@@ -27,17 +27,21 @@ export default function GodGPTInfoPage() {
 
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-white">ChatGPT Can't Tell You This,</span>
-              <br />
+              <span className="text-white">Your 2025 </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400">
-                But Your 2025 Wrap Can
+                Wrapped
+              </span>
+              <br />
+              <span className="text-white">Your 2026 </span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-pink-400">
+                Revealed
               </span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
               <span className="text-purple-300 font-semibold">12,847 people discovered their 2026 theme this week.</span> Upload your 2025 reflections and goals. 
-              Get personalized monthly themes, hidden patterns ChatGPT misses, and <span className="text-pink-300 font-semibold">step-by-step instructions</span> to actually achieve your goals this year.
+              Get personalized monthly themes, hidden patterns, and <span className="text-pink-300 font-semibold">step-by-step instructions</span> you probably can't get with any other app.
             </p>
 
             {/* CTA Buttons */}
@@ -156,7 +160,7 @@ export default function GodGPTInfoPage() {
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               Based on your 2025 wrap and 2026 goals, here's a sneak peek of your personalized monthly themes. 
-              <span className="text-purple-300 font-semibold"> Each month reveals a unique focus</span> that ChatGPT can't predict.
+              <span className="text-purple-300 font-semibold"> Each month reveals a unique focus</span> tailored specifically to your journey.
             </p>
           </div>
 
@@ -216,7 +220,7 @@ export default function GodGPTInfoPage() {
             </p>
             <p className="text-gray-400 mb-6 text-sm max-w-2xl mx-auto">
               Unlike generic "theme of the year" generators, GodGPT analyzes your actual journey, identifies hidden patterns, 
-              and gives you actionable monthly guidance to achieve your goals.
+              and gives you actionable monthly guidance you probably can't get with any other app.
             </p>
             <a
               href="https://godgpt.fun/en"
@@ -233,102 +237,103 @@ export default function GodGPTInfoPage() {
         </div>
       </section>
 
-      {/* Comparison Section */}
+      {/* Unique Value Section */}
       <section className="px-5 py-16 md:px-8 md:py-24 bg-black/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Why ChatGPT Can't Give You This (But GodGPT Can)
+              Deep Insights You Probably Can't Get Anywhere Else
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              ChatGPT helps you write emails. GodGPT helps you understand <span className="text-purple-300 font-semibold">who you're becoming</span>.
+              GodGPT isn't just another AI tool. It's designed specifically to help you understand 
+              <span className="text-purple-300 font-semibold"> who you're becoming</span> through deep pattern recognition and personalized guidance.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* ChatGPT Column */}
-            <div className="p-8 rounded-2xl bg-gray-900/50 border border-gray-700">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gray-700 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-white">ChatGPT</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Feature 1 */}
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
               </div>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3 text-gray-400">
-                  <span className="text-gray-600 mt-1">•</span>
-                  <span>General-purpose information assistant</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-400">
-                  <span className="text-gray-600 mt-1">•</span>
-                  <span>Generic responses based on training data</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-400">
-                  <span className="text-gray-600 mt-1">•</span>
-                  <span>Task-focused: writing, coding, research</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-400">
-                  <span className="text-gray-600 mt-1">•</span>
-                  <span>No spiritual or personal growth focus</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-400">
-                  <span className="text-gray-600 mt-1">•</span>
-                  <span>Transactional interactions</span>
-                </li>
-              </ul>
+              <h3 className="text-xl font-bold text-white mb-3">Personalized Pattern Recognition</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Analyzes YOUR unique 2025 journey to identify hidden patterns, growth areas, and opportunities that generic tools miss.
+              </p>
             </div>
 
-            {/* GodGPT Column */}
-            <div className="p-8 rounded-2xl bg-gradient-to-br from-purple-900/40 to-pink-900/40 border-2 border-purple-500/50 relative overflow-hidden">
-              <div className="absolute top-0 right-0 px-3 py-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs font-bold rounded-bl-lg">
-                SPIRITUAL FOCUS
+            {/* Feature 2 */}
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                </svg>
               </div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-white">GodGPT</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Monthly Theme Roadmap</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Get 12 personalized monthly themes based on your actual journey—not generic predictions, but insights tailored to YOUR goals.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
               </div>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3 text-white">
-                  <span className="text-purple-400 mt-1">✓</span>
-                  <span><strong>Your spiritual guide</strong> for self-discovery</span>
-                </li>
-                <li className="flex items-start gap-3 text-white">
-                  <span className="text-purple-400 mt-1">✓</span>
-                  <span><strong>Personalized insights</strong> aligned with your journey</span>
-                </li>
-                <li className="flex items-start gap-3 text-white">
-                  <span className="text-purple-400 mt-1">✓</span>
-                  <span><strong>Deep reflection</strong> and pattern recognition</span>
-                </li>
-                <li className="flex items-start gap-3 text-white">
-                  <span className="text-purple-400 mt-1">✓</span>
-                  <span><strong>Practical spiritual growth</strong> strategies</span>
-                </li>
-                <li className="flex items-start gap-3 text-white">
-                  <span className="text-purple-400 mt-1">✓</span>
-                  <span><strong>Transformational conversations</strong> that evolve with you</span>
-                </li>
-              </ul>
+              <h3 className="text-xl font-bold text-white mb-3">Step-by-Step Action Plans</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Receive actionable guidance and instructions for each month—not vague advice, but concrete steps to achieve your goals.
+              </p>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Deep Spiritual Insights</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Goes beyond surface-level advice to reveal deeper patterns in your emotions, choices, and life path.
+              </p>
+            </div>
+
+            {/* Feature 5 */}
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Evolving Conversations</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Each interaction builds on the last, creating momentum toward breakthrough insights that evolve with your journey.
+              </p>
+            </div>
+
+            {/* Feature 6 */}
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Grounded Practicality</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Combines mystical insights with actionable steps you can actually implement to transform your life.
+              </p>
             </div>
           </div>
 
-          <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-2 border-purple-500/40 relative overflow-hidden">
-            <div className="absolute top-0 right-0 px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs font-bold rounded-bl-xl">
-              THE DIFFERENCE
-            </div>
-            <p className="text-center text-xl text-white font-semibold leading-relaxed pt-4">
-              <span className="text-purple-300">ChatGPT:</span> "Here's how to write a better email."<br />
-              <span className="text-pink-300">GodGPT:</span> "Here's the hidden pattern in your 2025 that's shaping your 2026, 
-              <span className="text-white"> and exactly what to do about it</span>."
-            </p>
-            <p className="text-center text-sm text-gray-400 mt-4">
-              One helps you do tasks. The other helps you become who you're meant to be.
+          <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-2 border-purple-500/40">
+            <p className="text-center text-lg text-white leading-relaxed">
+              <span className="text-purple-300 font-semibold">The Bottom Line:</span> Most AI tools give you generic responses. 
+              GodGPT gives you <span className="text-white font-semibold">deep, personalized insights</span> based on YOUR unique journey—insights you probably can't get with any other app.
             </p>
           </div>
         </div>
@@ -374,7 +379,7 @@ export default function GodGPTInfoPage() {
                 ))}
               </div>
               <p className="text-gray-300 mb-4 leading-relaxed">
-                "ChatGPT gives generic advice. GodGPT gave me step-by-step instructions for each month based on MY actual 2025 patterns. 
+                "I've tried other apps, but nothing compares. GodGPT gave me step-by-step instructions for each month based on MY actual 2025 patterns. 
                 I followed the March guidance and landed my dream client. This is the real deal."
               </p>
               <p className="text-purple-400 font-semibold">— Marcus T., Creative Director</p>
@@ -391,9 +396,9 @@ export default function GodGPTInfoPage() {
                 ))}
               </div>
               <p className="text-gray-300 mb-4 leading-relaxed">
-                "I tried ChatGPT for life coaching. It was... fine. Then I tried GodGPT with my 2025 wrap. 
+                "I've tried other AI tools for life coaching, but nothing came close. Then I tried GodGPT with my 2025 wrap. 
                 It connected dots I didn't even see. The monthly themes? Spot on. The step-by-step guide? Actually actionable. 
-                This is what AI should be doing."
+                This is what personalized AI should be doing."
               </p>
               <p className="text-purple-400 font-semibold">— Aisha K., Wellness Coach</p>
               <p className="text-xs text-gray-500 mt-2">Posted 1 day ago</p>
@@ -452,7 +457,7 @@ export default function GodGPTInfoPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-purple-400 mt-1">✓</span>
-                <span>Actionable guidance ChatGPT can't give you</span>
+                <span>Actionable guidance you can't get anywhere else</span>
               </li>
             </ul>
           </div>
