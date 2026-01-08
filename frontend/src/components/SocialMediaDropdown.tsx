@@ -9,9 +9,11 @@ export const SOCIAL_MEDIA_OPTIONS = [
   { value: 'TikTok', label: 'TikTok' },
 ] as const;
 
+export type SocialMediaChannel = 'Facebook' | 'Instagram' | 'YouTube' | 'TikTok';
+
 interface SocialMediaDropdownProps {
-  value: string[];
-  onChange: (value: string[]) => void;
+  value: SocialMediaChannel[];
+  onChange: (value: SocialMediaChannel[]) => void;
   error?: string;
   required?: boolean;
 }
@@ -22,7 +24,7 @@ export const SocialMediaDropdown: React.FC<SocialMediaDropdownProps> = ({
   error,
   required = false,
 }) => {
-  const handleToggle = (channelValue: string) => {
+  const handleToggle = (channelValue: SocialMediaChannel) => {
     const newValue = value.includes(channelValue)
       ? value.filter((v) => v !== channelValue)
       : [...value, channelValue];
