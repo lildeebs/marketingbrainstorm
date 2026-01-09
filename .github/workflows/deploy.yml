@@ -37,7 +37,13 @@ jobs:
         run: npm run build
 
       - name: Create .nojekyll file
-        run: touch out/.nojekyll
+        run: |
+          if [ ! -d out ]; then
+            echo "Error: out directory not found after build"
+            exit 1
+          fi
+          touch out/.nojekyll
+          echo "✓ Created .nojekyll file"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
