@@ -12,8 +12,22 @@ export default function FloatingSidebar() {
           className="flex flex-col items-center gap-2 group"
           aria-label="GodGPT Home"
         >
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-[0_0_20px_rgba(168,85,247,0.5)] group-hover:shadow-[0_0_30px_rgba(168,85,247,0.8)] transition-all duration-300 group-hover:scale-110">
-            <span className="text-white font-bold text-xl">G</span>
+          <div className="w-12 h-12 rounded-xl bg-black flex items-center justify-center shadow-[0_0_20px_rgba(168,85,247,0.5)] group-hover:shadow-[0_0_30px_rgba(168,85,247,0.8)] transition-all duration-300 group-hover:scale-110 border-2 border-white/20 group-hover:border-white/40">
+            <img 
+              src="/logo.png" 
+              alt="GodGPT Logo" 
+              className="w-10 h-10 object-contain"
+              onError={(e) => {
+                // Fallback to G if image doesn't load
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                const fallback = target.parentElement?.querySelector('.fallback-text');
+                if (fallback) {
+                  (fallback as HTMLElement).style.display = 'block';
+                }
+              }}
+            />
+            <span className="fallback-text text-white font-bold text-xl" style={{ display: 'none' }}>G</span>
           </div>
           <span className="text-xs text-gray-400 group-hover:text-purple-400 transition-colors font-semibold">GodGPT</span>
         </a>
