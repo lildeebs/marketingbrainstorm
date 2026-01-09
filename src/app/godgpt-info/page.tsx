@@ -65,19 +65,44 @@ export default function GodGPTInfoPage() {
               <span className="text-sm font-bold text-red-300">⚡ LIMITED: Only 247 Free Readings Left This Week</span>
             </div>
 
-            {/* Main Headline with Glow Effect */}
+            {/* Main Headline with Enhanced Glow and Lightbeam Effect */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight relative">
-              <span className="text-white drop-shadow-[0_0_20px_rgba(168,85,247,0.5)]">Your 2025 </span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 animate-gradient bg-[length:200%_auto] drop-shadow-[0_0_30px_rgba(168,85,247,0.6)]">
+              {/* Lightbeam overlay animation */}
+              <div className="absolute inset-0 overflow-hidden rounded-lg pointer-events-none">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-lightbeam" 
+                     style={{
+                       width: '200%',
+                       height: '120%',
+                       top: '-10%',
+                       left: '-100%',
+                       transform: 'skewX(-20deg)',
+                     }} />
+              </div>
+              
+              {/* Text with enhanced glow */}
+              <span className="relative text-white drop-shadow-[0_0_30px_rgba(168,85,247,0.8)] animate-glow-pulse-text">
+                Your 2025{' '}
+              </span>
+              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-pink-300 to-purple-300 animate-gradient bg-[length:200%_auto] drop-shadow-[0_0_40px_rgba(168,85,247,0.9),0_0_80px_rgba(168,85,247,0.5)] animate-glow-pulse-text">
                 Wrapped
               </span>
               <br />
-              <span className="text-white drop-shadow-[0_0_20px_rgba(236,72,153,0.5)]">Your 2026 </span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-pink-400 animate-gradient bg-[length:200%_auto] drop-shadow-[0_0_30px_rgba(236,72,153,0.6)]">
+              <span className="relative text-white drop-shadow-[0_0_30px_rgba(236,72,153,0.8)] animate-glow-pulse-text">
+                Your 2026{' '}
+              </span>
+              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-purple-300 to-pink-300 animate-gradient bg-[length:200%_auto] drop-shadow-[0_0_40px_rgba(236,72,153,0.9),0_0_80px_rgba(236,72,153,0.5)] animate-glow-pulse-text">
                 Revealed
               </span>
-              {/* Glowing underline effect */}
-              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent blur-sm animate-pulse" />
+              
+              {/* Multiple glow layers for depth */}
+              <span className="absolute inset-0 text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 opacity-30 blur-xl pointer-events-none animate-gradient bg-[length:200%_auto]">
+                Your 2025 Wrapped<br />Your 2026 Revealed
+              </span>
+              
+              {/* Glowing underline effect with animation */}
+              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-500 to-transparent blur-sm animate-pulse" style={{ animationDuration: '2s' }} />
+              </div>
             </h1>
 
             {/* Subheadline */}
