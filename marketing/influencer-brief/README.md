@@ -15,7 +15,7 @@ This standalone HTML presentation serves as the master brief for all GodGPT infl
 
 ## 📑 Slide Structure
 
-The deck consists of 7 slides:
+The deck consists of 8 slides:
 
 1. **Welcome Slide** - Introduction to the master brief
 2. **Why Join** - Benefits of joining the GodGPT affiliate community
@@ -27,10 +27,11 @@ The deck consists of 7 slides:
    - Personal Stories (TOF)
    - Reviews (MOF)
    - How To Use (Conversion)
-4. **Content Instructions** - Mandatory tags, hashtags, and guidelines
-5. **Channel Requirements** - Video specifications for TikTok, Instagram Reels, and YouTube Shorts
-6. **DO's & DON'Ts** - Best practices and things to avoid (side by side)
-7. **Contact** - Get started and contact information
+4. **Look & Feel - Community Content** - Examples of UGC videos we love
+5. **Content Instructions** - Mandatory tags, hashtags, and guidelines
+6. **Channel Requirements** - Video specifications for TikTok, Instagram Reels, and YouTube Shorts
+7. **DO's & DON'Ts** - Best practices and things to avoid (side by side)
+8. **Contact** - Get started and contact information
 
 ## 🚀 Usage
 
@@ -160,6 +161,9 @@ When updating content:
 
 - Main GodGPT Landing: `/marketing/godgpt-info-preview.html`
 - Affiliate Onboarding Form: `/src/app/onboarding/page.tsx`
+- Video Selection Guide: `VIDEO_SELECTION_GUIDE.md`
+- Video Selection Template: `VIDEO_SELECTION_TEMPLATE.md`
+- TikTok Embed Guide: `TIKTOK_EMBED_GUIDE.md`
 
 ## 📧 Contact
 

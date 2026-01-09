@@ -213,6 +213,17 @@
                 transform: translateY(0);
             }
         }
+        
+        /* Video Thumbnail Styles */
+        .video-thumbnail {
+            aspect-ratio: 9 / 16;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .video-thumbnail:hover {
+            transform: scale(1.02);
+        }
     </style>
 </head>
 <body class="text-white">
@@ -223,7 +234,7 @@
     
     <!-- Slide Counter -->
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">7</span>
+        <span id="current-slide">1</span> / <span id="total-slides">9</span>
     </div>
     
     <!-- Navigation Dots -->
@@ -353,8 +364,229 @@
         </div>
     </div>
     
-    <!-- Slide 4: Content Instructions -->
+    <!-- Slide 4: Look & Feel - Community Content -->
     <div class="slide" data-slide="4">
+        <div class="slide-container">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                LOOK & FEEL
+            </h2>
+            <p class="text-center text-gray-300 mb-8 text-lg md:text-xl">Community Content Examples</p>
+            
+            <div class="max-w-6xl mx-auto">
+                <p class="text-center text-gray-400 mb-6 text-sm md:text-base">
+                    These are examples of UGC content we love. Visit <a href="https://www.tiktok.com/@godgpt_" target="_blank" class="text-purple-300 hover:text-pink-300 underline">@godgpt_</a> for more inspiration.
+                </p>
+                
+                <!-- Video Thumbnails Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                    <!-- Video Thumbnail 1 - Top Performer -->
+                    <div class="content-card p-0 overflow-hidden aspect-[9/16] relative group cursor-pointer">
+                        <a href="https://www.tiktok.com/@godgpt_/video/7584702619336051980" target="_blank" class="block w-full h-full">
+                            <div class="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                                <div class="text-center p-4">
+                                    <div class="text-4xl mb-2">🎬</div>
+                                    <p class="text-xs text-gray-400 font-semibold">Top Performer #1</p>
+                                    <p class="text-xs text-purple-300 mt-1">High Engagement</p>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <div class="text-white text-2xl">▶</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Video Thumbnail 2 - Top Performer -->
+                    <div class="content-card p-0 overflow-hidden aspect-[9/16] relative group cursor-pointer">
+                        <a href="https://www.tiktok.com/@godgpt_/video/7582135504154397970" target="_blank" class="block w-full h-full">
+                            <div class="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                                <div class="text-center p-4">
+                                    <div class="text-4xl mb-2">🎬</div>
+                                    <p class="text-xs text-gray-400 font-semibold">Top Performer #2</p>
+                                    <p class="text-xs text-purple-300 mt-1">High Engagement</p>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <div class="text-white text-2xl">▶</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Video Thumbnail 3 - Top Performer -->
+                    <div class="content-card p-0 overflow-hidden aspect-[9/16] relative group cursor-pointer">
+                        <a href="https://www.tiktok.com/@godgpt_/photo/7589479608764910866" target="_blank" class="block w-full h-full">
+                            <div class="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                                <div class="text-center p-4">
+                                    <div class="text-4xl mb-2">🎬</div>
+                                    <p class="text-xs text-gray-400 font-semibold">Top Performer #3</p>
+                                    <p class="text-xs text-purple-300 mt-1">High Engagement</p>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <div class="text-white text-2xl">▶</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Video Thumbnail 4 - Placeholder for future -->
+                    <div class="content-card p-0 overflow-hidden aspect-[9/16] relative group cursor-pointer">
+                        <div class="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                            <div class="text-center p-4">
+                                <div class="text-4xl mb-2">🎬</div>
+                                <p class="text-xs text-gray-400">Video Example 4</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <div class="text-white text-2xl">▶</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Thumbnail 5 - Placeholder for future -->
+                    <div class="content-card p-0 overflow-hidden aspect-[9/16] relative group cursor-pointer">
+                        <div class="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                            <div class="text-center p-4">
+                                <div class="text-4xl mb-2">🎬</div>
+                                <p class="text-xs text-gray-400">Video Example 5</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <div class="text-white text-2xl">▶</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Thumbnail 6 - Placeholder for future -->
+                    <div class="content-card p-0 overflow-hidden aspect-[9/16] relative group cursor-pointer">
+                        <div class="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                            <div class="text-center p-4">
+                                <div class="text-4xl mb-2">🎬</div>
+                                <p class="text-xs text-gray-400">Video Example 6</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <div class="text-white text-2xl">▶</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Success Patterns Section -->
+                <div class="content-card bg-gradient-to-r from-purple-500/10 to-pink-500/10 border-purple-500/30 mb-4">
+                    <h3 class="text-xl font-bold mb-3 text-purple-300">✨ What Makes These Videos Successful</h3>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-300">
+                        <div>
+                            <p class="font-semibold text-white mb-2">🎣 Strong Hook</p>
+                            <p>First 3 seconds capture attention immediately with curiosity, pattern interrupt, or value promise</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white mb-2">🖼️ Click-Baity Cover Photo</p>
+                            <p>High contrast, bold text overlay, emotionally engaging thumbnail that stops the scroll</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card bg-purple-500/10 border-purple-500/30">
+                    <p class="text-sm text-gray-300 text-center">
+                        <span class="font-semibold text-purple-300">Note:</span> Replace placeholder thumbnails with actual TikTok video embeds or screenshots. 
+                        You can embed TikTok videos using their embed code or use video thumbnails that link to the original posts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 5: Success Patterns -->
+    <div class="slide" data-slide="5">
+        <div class="slide-container">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                What Makes Content Successful
+            </h2>
+            <p class="text-center text-gray-300 mb-8 text-lg">Key patterns from our top-performing videos</p>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- Strong Hook Section -->
+                <div class="content-card bg-green-500/10 border-green-500/30">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-3xl">🎣</div>
+                        <h3 class="text-2xl font-bold text-green-400">Strong Hook (First 3 Seconds)</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">The first 3 seconds determine if viewers will watch. Our top performers excel at this.</p>
+                    <div class="space-y-3">
+                        <div class="bg-black/20 p-3 rounded-lg">
+                            <p class="font-semibold text-white mb-2">✅ What Works:</p>
+                            <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                                <li>• Pattern interrupt (unexpected visual or audio)</li>
+                                <li>• Curiosity gap ("The thing nobody tells you about...")</li>
+                                <li>• Question hook ("POV: You just discovered...")</li>
+                                <li>• Emotional hook (immediate emotional reaction)</li>
+                                <li>• Visual hook (striking first frame)</li>
+                                <li>• Audio hook (trending sound or unexpected audio)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-black/20 p-3 rounded-lg">
+                            <p class="font-semibold text-white mb-2">💡 Pro Tip:</p>
+                            <p class="text-gray-300 text-sm">Test 3-5 hook variations per concept. The hook should make viewers stop scrolling immediately.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Click-Baity Thumbnail Section -->
+                <div class="content-card bg-orange-500/10 border-orange-500/30">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="text-3xl">🖼️</div>
+                        <h3 class="text-2xl font-bold text-orange-400">Click-Baity Cover Photo/Thumbnail</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Your thumbnail is the first thing viewers see. Make it impossible to scroll past.</p>
+                    <div class="space-y-3">
+                        <div class="bg-black/20 p-3 rounded-lg">
+                            <p class="font-semibold text-white mb-2">✅ What Works:</p>
+                            <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                                <li>• High contrast colors (bright, saturated)</li>
+                                <li>• Bold text overlay (1-2 words max, readable)</li>
+                                <li>• Face/emotion visible (creates connection)</li>
+                                <li>• Question or bold statement</li>
+                                <li>• Shows GodGPT app/interface</li>
+                                <li>• Emotionally engaging (surprise, curiosity, intrigue)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-black/20 p-3 rounded-lg">
+                            <p class="font-semibold text-white mb-2">💡 Pro Tip:</p>
+                            <p class="text-gray-300 text-sm">Your thumbnail should work even without sound. Test it by covering the video - can you tell what it's about?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Success Factors -->
+                <div class="content-card">
+                    <h3 class="text-xl font-bold mb-4 text-purple-300">Other Key Success Factors</h3>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p class="font-semibold text-white mb-2">📊 High Completion Rate</p>
+                            <p class="text-gray-300">Target >80% - means content keeps viewers engaged throughout</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white mb-2">💬 Strong Engagement</p>
+                            <p class="text-gray-300">Comments, shares, and saves indicate content resonates with audience</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white mb-2">✨ Authenticity</p>
+                            <p class="text-gray-300">Real moments and genuine reactions perform better than overly scripted content</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white mb-2">🎯 Clear Value</p>
+                            <p class="text-gray-300">Viewers should understand the benefit or takeaway within first 10 seconds</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card bg-purple-500/10 border-purple-500/30">
+                    <p class="text-sm text-gray-300 text-center">
+                        <span class="font-semibold text-purple-300">Study the top 3 videos</span> linked on the previous slide to see these patterns in action.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 6: Content Instructions -->
+    <div class="slide" data-slide="6">
         <div class="slide-container">
             <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center">
                 Content Instructions
@@ -403,8 +635,8 @@
         </div>
     </div>
     
-    <!-- Slide 5: Channel Requirements -->
-    <div class="slide" data-slide="5">
+    <!-- Slide 7: Channel Requirements -->
+    <div class="slide" data-slide="7">
         <div class="slide-container">
             <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
                 Channel Requirements
@@ -465,8 +697,8 @@
         </div>
     </div>
     
-    <!-- Slide 6: DO's and DON'Ts -->
-    <div class="slide" data-slide="6">
+    <!-- Slide 8: DO's and DON'Ts -->
+    <div class="slide" data-slide="8">
         <div class="slide-container">
             <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center">
                 <span class="text-green-400">DO's</span>
@@ -533,8 +765,8 @@
         </div>
     </div>
     
-    <!-- Slide 7: Contact -->
-    <div class="slide" data-slide="7">
+    <!-- Slide 9: Contact -->
+    <div class="slide" data-slide="9">
         <div class="slide-container">
             <div class="text-center max-w-3xl mx-auto">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
@@ -564,7 +796,7 @@
     
     <script>
         let currentSlide = 1;
-        const totalSlides = 7;
+        const totalSlides = 9;
         
         // Initialize stars
         function initStars() {
