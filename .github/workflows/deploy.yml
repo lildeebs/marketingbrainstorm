@@ -36,14 +36,28 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
-      - name: Create .nojekyll file
+      - name: Verify build output
         run: |
-          if [ ! -d out ]; then
-            echo "Error: out directory not found after build"
+          echo "Checking for out directory..."
+          ls -la
+          if [ -d out ]; then
+            echo "✓ out directory exists"
+            ls -la out/ | head -10
+          else
+            echo "❌ Error: out directory not found after build"
+            echo "Build may have failed. Checking for errors..."
             exit 1
           fi
+
+      - name: Create .nojekyll file
+        run: |
           touch out/.nojekyll
-          echo "✓ Created .nojekyll file"
+          if [ -f out/.nojekyll ]; then
+            echo "✓ Created .nojekyll file successfully"
+          else
+            echo "❌ Error: Failed to create .nojekyll file"
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
