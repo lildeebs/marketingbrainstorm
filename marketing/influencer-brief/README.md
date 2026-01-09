@@ -15,7 +15,7 @@ This standalone HTML presentation serves as the master brief for all GodGPT infl
 
 ## 📑 Slide Structure
 
-The deck consists of 8 slides:
+The deck consists of 11 slides:
 
 1. **Welcome Slide** - Introduction to the master brief
 2. **Why Join** - Benefits of joining the GodGPT affiliate community
@@ -23,15 +23,27 @@ The deck consists of 8 slides:
    - Commission structure
    - First access to product launches
    - Creative freedom
-3. **Content Pillars** - Three core content types:
+3. **GodGPT POV** - Why we partner with creators
+   - To amplify creativity
+   - To post authentic content
+   - To engage audiences
+4. **Who Are GodGPT Creators** - Exclusive selection criteria
+   - Creator archetype and characteristics
+   - Target audience and interests
+   - Handpicked selection message
+5. **Content Pillars** - Three core content types:
    - Personal Stories (TOF)
    - Reviews (MOF)
    - How To Use (Conversion)
-4. **Look & Feel - Community Content** - Examples of UGC videos we love
-5. **Content Instructions** - Mandatory tags, hashtags, and guidelines
-6. **Channel Requirements** - Video specifications for TikTok, Instagram Reels, and YouTube Shorts
-7. **DO's & DON'Ts** - Best practices and things to avoid (side by side)
-8. **Contact** - Get started and contact information
+6. **Look & Feel - Community Content** - Examples of UGC videos we love
+7. **Success Patterns** - What makes content successful
+   - Strong hooks
+   - Click-baity thumbnails
+   - Engagement drivers
+8. **Content Instructions** - Mandatory tags, hashtags, and guidelines
+9. **Channel Requirements** - Video specifications for TikTok, Instagram Reels, and YouTube Shorts
+10. **DO's & DON'Ts** - Best practices and things to avoid (side by side)
+11. **Contact** - Get started and contact information
 
 ## 🚀 Usage
 

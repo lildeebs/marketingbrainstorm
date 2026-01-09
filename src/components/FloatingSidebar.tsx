@@ -12,22 +12,22 @@ export default function FloatingSidebar() {
           className="flex flex-col items-center gap-2 group"
           aria-label="GodGPT Home"
         >
-          <div className="w-12 h-12 rounded-xl bg-black flex items-center justify-center shadow-[0_0_20px_rgba(168,85,247,0.5)] group-hover:shadow-[0_0_30px_rgba(168,85,247,0.8)] transition-all duration-300 group-hover:scale-110 border-2 border-white/20 group-hover:border-white/40">
+          <div className="w-12 h-12 rounded-xl bg-black flex items-center justify-center shadow-[0_0_20px_rgba(168,85,247,0.5)] group-hover:shadow-[0_0_30px_rgba(168,85,247,0.8)] transition-all duration-300 group-hover:scale-110 border-2 border-white/20 group-hover:border-white/40 overflow-hidden relative">
             <img 
               src="/logo.png" 
               alt="GodGPT Logo" 
-              className="w-10 h-10 object-contain"
+              className="w-full h-full object-contain p-1"
               onError={(e) => {
-                // Fallback to G if image doesn't load
+                // Fallback to G text if image doesn't load
                 const target = e.target as HTMLImageElement;
                 target.style.display = 'none';
                 const fallback = target.parentElement?.querySelector('.fallback-text');
                 if (fallback) {
-                  (fallback as HTMLElement).style.display = 'block';
+                  (fallback as HTMLElement).style.display = 'flex';
                 }
               }}
             />
-            <span className="fallback-text text-white font-bold text-xl" style={{ display: 'none' }}>G</span>
+            <span className="fallback-text text-white font-bold text-xl absolute inset-0 flex items-center justify-center" style={{ display: 'none' }}>G</span>
           </div>
           <span className="text-xs text-gray-400 group-hover:text-purple-400 transition-colors font-semibold">GodGPT</span>
         </a>
