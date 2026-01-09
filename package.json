@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && cp public/logo.png out/logo.png || true",
+    "build": "next build",
+    "postbuild": "if [ -d out ] && [ -f public/logo.png ]; then cp public/logo.png out/logo.png && echo '✓ Logo copied'; else echo '⚠ Logo not copied (out dir or logo file missing)'; fi",
     "start": "next start",
     "lint": "next lint"
   },
