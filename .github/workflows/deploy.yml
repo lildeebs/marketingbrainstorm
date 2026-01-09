@@ -52,6 +52,17 @@ jobs:
             exit 1
           fi
 
+      - name: Copy public assets
+        run: |
+          if [ -f public/logo.png ]; then
+            cp public/logo.png out/logo.png
+            echo "✓ Copied logo.png to out directory"
+          fi
+          if [ -f 'public/GodGPT Logo_Cursor.png' ]; then
+            cp 'public/GodGPT Logo_Cursor.png' out/ 2>/dev/null || true
+            echo "✓ Copied original logo file"
+          fi
+
       - name: Create .nojekyll file
         run: |
           touch out/.nojekyll

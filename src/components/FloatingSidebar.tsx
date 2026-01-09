@@ -18,8 +18,13 @@ export default function FloatingSidebar() {
               alt="GodGPT Logo" 
               className="w-full h-full object-contain p-1"
               onError={(e) => {
-                // Fallback to G text if image doesn't load
+                // Try with basePath if first attempt fails
                 const target = e.target as HTMLImageElement;
+                if (!target.src.includes('/GodGPT-Marketing')) {
+                  target.src = '/GodGPT-Marketing/logo.png';
+                  return;
+                }
+                // Final fallback to G text
                 target.style.display = 'none';
                 const fallback = target.parentElement?.querySelector('.fallback-text');
                 if (fallback) {
